@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const {
@@ -10,21 +11,21 @@ const app = express();
 app.use(morgan('dev'));
 // app.use(morgan('combined'));
 app.use(helmet())
-// app.use(compression());
+app.use(compression());
 
 // init db 
 require('./dbs/init.mongodb')
-const {
-    checkOverLoad
-} = require('./helpers/check.connect')
-checkOverLoad()
+// const {
+//     checkOverLoad
+// } = require('./helpers/check.connect')
+// checkOverLoad()
 // init routes
 app.get('/', (req, res, next) => {
-    const strCompress = 'Duongh399'
+    // const strCompress = 'Duongh399'
     return res.status(200).json({
 
         message: 'Wellcome Nodejs server',
-        metadata: strCompress.repeat(1000)
+        // metadata: strCompress.repeat(1000)
     })
 })
 // handling error 
