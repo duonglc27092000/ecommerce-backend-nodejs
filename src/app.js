@@ -12,6 +12,10 @@ app.use(morgan('dev'));
 // app.use(morgan('combined'));
 app.use(helmet())
 app.use(compression());
+app.use(express.json())
+app.use(express.urlencoded({
+    extended: true
+}))
 
 // init db 
 require('./dbs/init.mongodb')
@@ -20,14 +24,8 @@ require('./dbs/init.mongodb')
 // } = require('./helpers/check.connect')
 // checkOverLoad()
 // init routes
-app.get('/', (req, res, next) => {
-    // const strCompress = 'Duongh399'
-    return res.status(200).json({
+app.use('/', require('./routes'))
 
-        message: 'Wellcome Nodejs server',
-        // metadata: strCompress.repeat(1000)
-    })
-})
 // handling error 
 
 module.exports = app
