@@ -2,6 +2,9 @@
 const shopModel = require('../models/shop.model')
 const bcrypt = require('bcrypt')
 const crypto = require('crypto')
+const {
+    getInfoData
+} = require('../utils/index')
 const KeyTokenService = require('./keyToken.service')
 const {
     createTokenPair
@@ -78,7 +81,10 @@ class AccessService {
                 return {
                     code: 201,
                     metadata: {
-                        shop: newShop,
+                        shop: getInfoData({
+                            fields: ['_id', 'name', 'email'],
+                            object: newShop
+                        }),
                         tokens
                     }
                 }
