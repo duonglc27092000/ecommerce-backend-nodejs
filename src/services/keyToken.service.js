@@ -10,6 +10,7 @@ class KeyTokenService {
         publicKey
     }) => {
         try {
+            // level 0
             const publicKeyString = publicKey.toString()
             const tokens = await keyTokenModel.create({
                 user: userId,
@@ -17,6 +18,9 @@ class KeyTokenService {
             })
 
             return tokens ? tokens.publicKey : null
+            
+            // level xxx
+            // const filter ={user:userId,update={publicKey,pr}}
         } catch (error) {
             return error
         }
