@@ -1,4 +1,4 @@
-@url_dev =  http://localhost:3055/v1/api
+@url_dev =http://localhost:3055/v1/api
 
 ### signup
 POST {{url_dev}}/shop/signup
@@ -7,6 +7,6 @@ x-api-key: 3dcef64f6818b97f6fea390c457586c3267f2d46361ca55f2d0f3f24f3572bb88d74c
 
 {
     "name": "Shop JS",
-    "email": "luongduongit002@gmail.com",
-    "password": "1234672qwe"
+    "email": "luongduongit014@gmail.com",
+    "password": "dgdg1999"
 }
