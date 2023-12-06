@@ -8,25 +8,33 @@ const ReasonStatusCode = {
     FORBIDDEN: 'Dad request error',
     CONFILCT: 'Conflict error'
 }
-
+const ReasonPhrases = {
+    UNAUTHORIZED: 'unauthenticated'
+}
 class ErrorResponse extends Error {
-    constructor(messgae, status) {
-        super(messgae)
+    constructor(message, status) {
+        super(message)
         this.status = status
     }
 }
 
 class ConflictRequestError extends ErrorResponse {
-    constructor(messgae = ReasonStatusCode.CONFILCT, statusCode = StatusCode.FORBIDDEN) {
-        super(messgae, statusCode)
+    constructor(message = ReasonStatusCode.CONFILCT, statusCode = StatusCode.FORBIDDEN) {
+        super(message, statusCode)
     }
 }
 class BadRequestError extends ErrorResponse {
-    constructor(messgae = ReasonStatusCode.CONFILCT, statusCode = StatusCode.FORBIDDEN) {
-        super(messgae, statusCode)
+    constructor(message = ReasonStatusCode.CONFILCT, statusCode = StatusCode.FORBIDDEN) {
+        super(message, statusCode)
+    }
+}
+class AuthFailureError extends ErrorResponse {
+    constructor(message = ReasonPhrases.UNAUTHORIZED, statusCode = StatusCode.UNAUTHORIZED) {
+        super(message, statusCode)
     }
 }
 module.exports = {
     ConflictRequestError,
-    BadRequestError
+    BadRequestError,
+    AuthFailureError
 }
