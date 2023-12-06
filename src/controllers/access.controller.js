@@ -11,7 +11,9 @@ class AccessController {
     login = async (req, res, next) => {
         new SuccessResponse({
             metadata: await AccessService.login(req.body)
-        })
+        }).send(res)
+        // return res.status(201).json(await AccessService.login(req.body))
+
     }
     signUp = async (req, res, next) => {
         new CREATED({
@@ -21,6 +23,7 @@ class AccessController {
                 limit: 10
             }
         }).send(res)
+        // return res.status(201).json(await AccessService.signUp(req.body))
     }
 
 }
