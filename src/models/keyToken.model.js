@@ -23,7 +23,7 @@ var keyTokenModel = new Schema({
     },
     refreshTokensUsed: {
         type: Array,
-        default: [] // nhung  refreshToken da duoc su dung
+        default: [] // những  refreshToken đã được sử dụng
     },
     refreshToken: {
         type: String,
