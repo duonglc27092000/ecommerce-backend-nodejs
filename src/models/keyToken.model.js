@@ -7,7 +7,7 @@ const {
 const DOUCUMENT_NAME = 'Key'
 const COLLECTION_NAME = 'Keys'
 // Declare the Schema of the Mongo model
-var keyTokenModel = new Schema({
+const keyTokenModel = new Schema({
     user: {
         type: Schema.Types.ObjectId,
         required: true,
