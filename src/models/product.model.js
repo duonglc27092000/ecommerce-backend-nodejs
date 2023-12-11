@@ -32,7 +32,10 @@ const productSchema = new Schema({
         require: true,
         enum: ['Electronics', 'Clothing', 'Furniture']
     },
-    product_shop: String,
+    product_shop: {
+        type:  Schema.Types.ObjectId,
+        ref: 'Shop'
+    },
     product_attributes: {
         type: Schema.Types.Mixed,
         require: true
@@ -49,7 +52,11 @@ const clothingSchema = new Schema({
             require: true
         },
         size: String,
-        material: String
+        material: String,
+        product_shop: {
+            type:  Schema.Types.ObjectId,
+            ref: 'Shop'
+        },
     }, {
         collection: 'clothes',
         timestamps: true
@@ -63,7 +70,11 @@ const electronicsSchema = new Schema({
             require: true
         },
         model: String,
-        color: String
+        color: String,
+        product_shop: {
+            type:  Schema.Types.ObjectId,
+            ref: 'Shop'
+        },
     }, {
         collection: 'Electronic',
         timestamps: true

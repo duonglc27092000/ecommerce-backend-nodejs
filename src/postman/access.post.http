@@ -24,28 +24,47 @@ POST {{url_dev}}/shop/handlerRefreshToken
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
 x-client-id: 6574aa758cb106e2acd7b63f
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEwNmUyYWNkN2I2M2YiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDIxNDk0NzQsImV4cCI6MTcwMjc1NDI3NH0.D8aOcmyqfU28p4HKHt5Uqr9OcWxlOjXSLivqbX0JHJk
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEwNmUyYWNkN2I2M2YiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDIyMzkyNzEsImV4cCI6MTcwMjg0NDA3MX0.Zh0j2osUGiB92_avGUF8jldIh2s_x1CjeRXuHhqhvLM
 
-### create new product
-POST {{url_dev}}/product
+### create new product Clothing
+POST {{url_dev}}/product 
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
 x-client-id: 6574aa758cb106e2acd7b63f
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEwNmUyYWNkN2I2M2YiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDIyMzkyNzEsImV4cCI6MTcwMjg0NDA3MX0.Zh0j2osUGiB92_avGUF8jldIh2s_x1CjeRXuHhqhvLM
 
 {
     "product_name":"New Jean",
     "product_description":"High-q",
-    "product_price":"New Jean",
-    "product_shop":"New Jean",
-    "product_type":"New Jean",
-    "product_thumb":"New Jean",
-    "product_quantity":"New Jean",
+    "product_price":50,
+    "product_type":"Clothing",
+    "product_thumb":"product_thumb",
+    "product_quantity":5,
     "product_attributes":{
-        "bard":"Levi's",
+        "brand":"Levi's",
         "size":"L",
         "material":"Denim"
-    },
+    }
+}
+### create new product Electronics
+POST {{url_dev}}/product 
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 6574aa758cb106e2acd7b63f
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEwNmUyYWNkN2I2M2YiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDIyMzkyNzEsImV4cCI6MTcwMjg0NDA3MX0.Zh0j2osUGiB92_avGUF8jldIh2s_x1CjeRXuHhqhvLM
 
+{
+    "product_name":"Mes66",
+    "product_description":"limited",
+    "product_price":50,
+    "product_type":"Electronics",
+    "product_thumb":"product_thumb",
+    "product_quantity":5,
+    "product_attributes":{
+        "manufacturer":"Mes",
+        "model":"2002",
+        "color":"black"
+    }
 }
 
 

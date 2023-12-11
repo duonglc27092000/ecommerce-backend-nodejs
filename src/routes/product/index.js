@@ -13,6 +13,6 @@ const {
 /// authentication
 router.use(authenticationV2)
 //
-router.post('', asyncHandler(ProductController.createProduct))
+router.post('/', asyncHandler(ProductController.createProduct))
 
 module.exports = router
