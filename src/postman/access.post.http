@@ -67,4 +67,23 @@ x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEw
     }
 }
 
+### create new product Fu
+POST {{url_dev}}/product 
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 6574aa758cb106e2acd7b63f
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEwNmUyYWNkN2I2M2YiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDIyMzkyNzEsImV4cCI6MTcwMjg0NDA3MX0.Zh0j2osUGiB92_avGUF8jldIh2s_x1CjeRXuHhqhvLM
 
+{
+    "product_name":"Tu sach",
+    "product_description":"nothing",
+    "product_price":5000,
+    "product_type":"Furniture",
+    "product_thumb":"product_thumb",
+    "product_quantity":233,
+    "product_attributes":{
+        "brand":"nam duong",
+        "size":"200x300",
+        "material":"pressed wood"
+    }
+}
