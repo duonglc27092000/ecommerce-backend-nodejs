@@ -2,10 +2,9 @@
 //  chấm than dmbg
 const {
     model,
-    Schema,
-    Types
+    Types,
+    Schema
 } = require('mongoose'); // Erase if already required
-
 const DOUCUMENT_NAME = 'Shop'
 const COLLECTION_NAME = 'Shops'
 // Declare the Schema of the Mongo model

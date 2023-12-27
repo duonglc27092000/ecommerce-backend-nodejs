@@ -13,28 +13,27 @@ x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267
 ### login
 POST {{url_dev}}/shop/login
 Content-Type: application/json
-x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-api-key: ad061d31e1192c3b7ac85db361c64547f9b4ecba771802a0bd9005188981d8ac8d79c2917c87387b40fe514eb9a1495ed6470c176d03657dc55785b8392a586b
 
 {
-    "email": "luongduongit019@gmail.com",
+    "email": "luongduongit020@gmail.com",
     "password": "dgdg1999"
 }
 ### handlerRefreshToken
 POST {{url_dev}}/shop/handlerRefreshToken
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
-x-client-id: 6574aa758cb106e2acd7b63f
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEwNmUyYWNkN2I2M2YiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDIyMzkyNzEsImV4cCI6MTcwMjg0NDA3MX0.Zh0j2osUGiB92_avGUF8jldIh2s_x1CjeRXuHhqhvLM
-
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg1OTAsImV4cCI6MTcwMjkzMzM5MH0._20wWEw9snaVV0FARtKKRORyrO1c9BKGkTn_nylHSsc
 ### create new product Clothing
 POST {{url_dev}}/product 
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
-x-client-id: 6574aa758cb106e2acd7b63f
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEwNmUyYWNkN2I2M2YiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDIyMzkyNzEsImV4cCI6MTcwMjg0NDA3MX0.Zh0j2osUGiB92_avGUF8jldIh2s_x1CjeRXuHhqhvLM
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDM2MTA2MjcsImV4cCI6MTcwNDIxNTQyN30.x_Go_82YWNPtC1ozsCaXX98j4jSxh7IOQIO7F4Af5QE
 
 {
-    "product_name":"New Jean",
+    "product_name":"New Jean 4",
     "product_description":"High-q",
     "product_price":50,
     "product_type":"Clothing",
@@ -50,11 +49,11 @@ x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEw
 POST {{url_dev}}/product 
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
-x-client-id: 6574aa758cb106e2acd7b63f
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEwNmUyYWNkN2I2M2YiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDIyMzkyNzEsImV4cCI6MTcwMjg0NDA3MX0.Zh0j2osUGiB92_avGUF8jldIh2s_x1CjeRXuHhqhvLM
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
 
 {
-    "product_name":"Mes66",
+    "product_name":"Mess 02",
     "product_description":"limited",
     "product_price":50,
     "product_type":"Electronics",
@@ -71,11 +70,11 @@ x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEw
 POST {{url_dev}}/product 
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
-x-client-id: 6574aa758cb106e2acd7b63f
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEwNmUyYWNkN2I2M2YiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDIyMzkyNzEsImV4cCI6MTcwMjg0NDA3MX0.Zh0j2osUGiB92_avGUF8jldIh2s_x1CjeRXuHhqhvLM
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
 
 {
-    "product_name":"Tu sach",
+    "product_name":"Tu sach 20",
     "product_description":"nothing",
     "product_price":5000,
     "product_type":"Furniture",
@@ -87,3 +86,30 @@ x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc0YWE3NThjYjEw
         "material":"pressed wood"
     }
 }
+
+### get all  draft 
+GET {{url_dev}}/product/drafts/all 
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
+
+#### action product 
+POST {{url_dev}}/product/publish/657ed2e62e3165567e241ce9
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
+
+
+#### get all  publish
+GET {{url_dev}}/product/publish/all 
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
+ 
+### get searchproduct
+
+GET {{url_dev}}/product/search/
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364

@@ -5,7 +5,7 @@ const {
     Schema,
     Types
 } = require('mongoose'); // Erase if already required
-
+const slugify = require('slugify')
 const DOUCUMENT_NAME = 'Product'
 const COLLECTION_NAME = 'Products'
 // Declare the Schema of the Mongo model
@@ -19,6 +19,7 @@ const productSchema = new Schema({
         require: true
     },
     product_description: String,
+    product_slug: String,
     product_price: {
         type: Number,
         require: true
@@ -32,18 +33,56 @@ const productSchema = new Schema({
         require: true,
         enum: ['Electronics', 'Clothing', 'Furniture']
     },
-    product_shop: {
+    product_shop: [{
         type: Schema.Types.ObjectId,
-        ref: 'Shop'
-    },
+        ref: 'Shop',
+    }],
     product_attributes: {
         type: Schema.Types.Mixed,
         require: true
+    },
+    // more
+    product_ratingsAverage: {
+        type: Number,
+        default: 4.5,
+        min: [1, "Rating must be above 1.0"],
+        max: [5, "Rating must be above 5.0"],
+        // 3,424525 => 3,4
+        set: (val) => Math.round(val * 10) / 10
+    },
+    product_variations: {
+        type: Array,
+        default: []
+    },
+    isDraft: {
+        type: Boolean,
+        default: true,
+        index: true,
+        select: false
+    },
+    isPublishesd: {
+        type: Boolean,
+        default: false,
+        index: true,
+        select: false
     },
 }, {
     timestamps: true,
     collection: COLLECTION_NAME
 });
+
+//create index for search
+productSchema.index({
+    product_name: 'text',
+    product_description: 'tett'
+})
+// document middleware: runs befores .save() and .create()...
+productSchema.pre('save', function (next) {
+    this.product_slug = slugify(this.product_name, {
+        lower: true
+    })
+    next()
+})
 
 // define the product type  = clothing
 const clothingSchema = new Schema({
@@ -55,7 +94,7 @@ const clothingSchema = new Schema({
         material: String,
         product_shop: {
             type: Schema.Types.ObjectId,
-            ref: 'Shop'
+            ref: 'Shop',
         },
     }, {
         collection: 'clothes',
@@ -63,7 +102,7 @@ const clothingSchema = new Schema({
     }
 
 )
-// define the product type  = clothing
+// define the product type  = electronic
 const electronicsSchema = new Schema({
         manufacturer: {
             type: String,
@@ -71,10 +110,10 @@ const electronicsSchema = new Schema({
         },
         model: String,
         color: String,
-        product_shop: {
+        product_shop: [{
             type: Schema.Types.ObjectId,
-            ref: 'Shop'
-        },
+            ref: 'Shop',
+        }],
     }, {
         collection: 'electronics',
         timestamps: true
@@ -92,7 +131,7 @@ const furnitureSchema = new Schema({
         material: String,
         product_shop: {
             type: Schema.Types.ObjectId,
-            ref: 'Shop'
+            ref: 'Shop',
         },
     }, {
         collection: 'furnitures',
