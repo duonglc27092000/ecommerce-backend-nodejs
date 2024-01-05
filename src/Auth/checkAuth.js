@@ -15,20 +15,21 @@ const apiKey = async (req, res, next) => {
 
         if (!key) {
             return res.status(403).json({
-                message: 'Forbiden Error'
+                message: 'Forbiden Error key'
             })
         }
+        console.log('Key :', key)
         // check objKey
         const objKey = await findById(key)
         if (!objKey) {
             return res.status(403).json({
-                message: 'Forbiden Error'
+                message: 'Forbiden Error objKey'
             })
         }
         req.objKey = objKey
         return next()
     } catch (error) {
-
+        return error
     }
 }
 const permission = (permission) => {
