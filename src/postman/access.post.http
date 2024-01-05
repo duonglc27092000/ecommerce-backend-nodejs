@@ -7,15 +7,114 @@ x-api-key: 3dcef64f6818b97f6fea390c457586c3267f2d46361ca55f2d0f3f24f3572bb88d74c
 
 {
     "name": "Shop JS",
-    "email": "luongduongit026@gmail.com",
+    "email": "luongduongit01@gmail.com",
     "password": "dgdg1999"
 }
 ### login
 POST {{url_dev}}/shop/login
 Content-Type: application/json
-x-api-key: 3dcef64f6818b97f6fea390c457586c3267f2d46361ca55f2d0f3f24f3572bb88d74c4c85b52744946d3d2c95e2735559326a3df710303777ad7ac44252fa943
+x-api-key: ad061d31e1192c3b7ac85db361c64547f9b4ecba771802a0bd9005188981d8ac8d79c2917c87387b40fe514eb9a1495ed6470c176d03657dc55785b8392a586b
 
 {
-    "email": "luongduongit026@gmail.com",
+    "email": "luongduongit019@gmail.com",
     "password": "dgdg1999"
 }
+### handlerRefreshToken
+POST {{url_dev}}/shop/handlerRefreshToken
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTdlZDhlYzVlODU1ZDU5YWQ5ZmI3ZjkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0Njk2ODUsImV4cCI6MTcwNTA3NDQ4NX0.CdWgC5RqM_Tsj3x1zd1HHzlK1ukupwwaE3JFMS-eOBE
+
+### create new product Clothing
+POST {{url_dev}}/product
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTdlZDhlYzVlODU1ZDU5YWQ5ZmI3ZjkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0Njk3MjYsImV4cCI6MTcwNTA3NDUyNn0.iioOYCrji98OT-slOqYt9_pAG0FV2dCnyMFd3eOfmcM
+
+{
+    "product_name":"New Jean 1",
+    "product_description":"High-q",
+    "product_price":50,
+    "product_type":"Clothing",
+    "product_thumb":"product_thumb",
+    "product_quantity":5,
+    "product_attributes":{
+        "brand":"Levi's",
+        "size":"L",
+        "material":"Denim"
+    }
+}
+### create new product Electronics
+POST {{url_dev}}/product 
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
+
+{
+    "product_name":"Mess 02",
+    "product_description":"limited",
+    "product_price":50,
+    "product_type":"Electronics",
+    "product_thumb":"product_thumb",
+    "product_quantity":5,
+    "product_attributes":{
+        "manufacturer":"Mes",
+        "model":"2002",
+        "color":"black"
+    }
+}
+
+### create new product Fu
+POST {{url_dev}}/product 
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
+
+{
+    "product_name":"Tu sach 02",
+    "product_description":"nothing",
+    "product_price":590,
+    "product_type":"Furniture",
+    "product_thumb":"product_thumb",
+    "product_quantity":233,
+    "product_attributes":{
+        "brand":"nam duong",
+        "size":"200x300",
+        "material":"pressed wood"
+    }
+}
+
+### get all  draft 
+GET {{url_dev}}/product/drafts/all 
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
+
+#### action product 
+POST {{url_dev}}/product/unpublish/65982bcef2b56f73d394e126
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
+
+
+#### get all  publish
+GET {{url_dev}}/product/publish/all 
+Content-Type: application/json
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+x-client-id: 657776e4c79d36a8fa5461a9
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
+
+### get searchproduct
+
+GET {{url_dev}}/product/search/
+x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+###
+
+GET {{url_dev}}/product/
+
