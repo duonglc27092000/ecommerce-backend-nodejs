@@ -80,6 +80,25 @@ class ProductController {
         }).send(res)
 
     }
+    findAllProducts = async (req, res, next) => {
+
+        new SuccessResponse({
+            message: 'Create list  findAllProducts  Success',
+            metadata: await ProductServiceV2.findAllProducts(req.query)
+        }).send(res)
+
+    }
+    findProduct = async (req, res, next) => {
+
+        new SuccessResponse({
+            message: 'Create list  findProduct  Success',
+            metadata: await ProductServiceV2.findProduct({
+                product_id: req.params.product_id
+            })
+        }).send(res)
+
+    }
+
     // End QUERY//
 
 }

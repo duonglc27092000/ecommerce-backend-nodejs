@@ -15,7 +15,9 @@ const {
     findAllPublishForShop,
     publishProductByShop,
     unPublishProductByShop,
-    searchProductByUser
+    searchProductByUser,
+    findAllProducts,
+    findProduct
 } = require('../models/repositories/product.repo')
 //define Factory class to create product
 
@@ -30,6 +32,11 @@ class ProductFactory {
         ProductFactory.productRegistry[type] = classRef
     }
     static async createProduct(type, payload) {
+        const productClass = ProductFactory.productRegistry[type]
+        if (!productClass) throw new BadRequestError(`Invalid Product Types ${type}`)
+        return new productClass(payload).createProduct()
+    }
+    static async updateProduct(type, payload) {
         const productClass = ProductFactory.productRegistry[type]
         if (!productClass) throw new BadRequestError(`Invalid Product Types ${type}`)
         return new productClass(payload).createProduct()
@@ -95,9 +102,34 @@ class ProductFactory {
             keySearch
         })
     }
+    static async findAllProducts({
+        limit = 50,
+        sort = 'ctime',
+        page = 1,
+        filter = {
+            isPublished: true
+        },
+    }) {
+        return await findAllProducts({
+            limit,
+            sort,
+            page,
+            filter,
+            select: ['product_name', 'product_price', 'product_thumb']
+        })
+    }
+    static async findProduct({
+        product_id
+    }) {
+        return await findProduct({
+            product_id,
+            unSelect: ['__v']
+        })
+    }
 }
 
 
+// define  base product class
 class Product {
     constructor({
         product_name,
@@ -158,6 +190,8 @@ class Electronics extends Product {
         return newProduct
     }
 }
+// define  sub-class for different product type Furniture
+
 class Furniture extends Product {
     async createProduct() {
         const newFurniture = await furniture.create({

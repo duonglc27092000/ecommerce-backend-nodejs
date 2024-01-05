@@ -11,6 +11,8 @@ const {
 } = require('../../Auth/anthUtils')
 
 router.get('/search/:keySearch', asyncHandler(ProductController.getListSearchProduct))
+router.get('', asyncHandler(ProductController.findAllProducts))
+router.get('/:product_id', asyncHandler(ProductController.findProduct))
 
 /// authentication
 router.use(authenticationV2)
