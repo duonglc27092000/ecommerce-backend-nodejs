@@ -44,7 +44,7 @@ const searchProductByUser = async ({
 }) => {
     const regexSearch = new RegExp(keySearch)
     const results = await product.find({
-        isPublishesd: true,
+        isPublished: true,
         $text: {
             $search: regexSearch
         }

@@ -1,9 +1,8 @@
 "use strict"
 //  chấm than dmbg
 const {
-    model,
     Schema,
-    Types
+    model,
 } = require('mongoose'); // Erase if already required
 const slugify = require('slugify')
 const DOUCUMENT_NAME = 'Product'
@@ -33,10 +32,10 @@ const productSchema = new Schema({
         require: true,
         enum: ['Electronics', 'Clothing', 'Furniture']
     },
-    product_shop: [{
+    product_shop: {
         type: Schema.Types.ObjectId,
-        ref: 'Shop',
-    }],
+        ref: 'Shop'
+    },
     product_attributes: {
         type: Schema.Types.Mixed,
         require: true
@@ -60,7 +59,7 @@ const productSchema = new Schema({
         index: true,
         select: false
     },
-    isPublishesd: {
+    isPublished: {
         type: Boolean,
         default: false,
         index: true,
@@ -74,7 +73,7 @@ const productSchema = new Schema({
 //create index for search
 productSchema.index({
     product_name: 'text',
-    product_description: 'tett'
+    product_description: 'text'
 })
 // document middleware: runs befores .save() and .create()...
 productSchema.pre('save', function (next) {
@@ -94,7 +93,7 @@ const clothingSchema = new Schema({
         material: String,
         product_shop: {
             type: Schema.Types.ObjectId,
-            ref: 'Shop',
+            ref: 'Shop'
         },
     }, {
         collection: 'clothes',
@@ -110,10 +109,10 @@ const electronicsSchema = new Schema({
         },
         model: String,
         color: String,
-        product_shop: [{
+        product_shop: {
             type: Schema.Types.ObjectId,
-            ref: 'Shop',
-        }],
+            ref: 'Shop'
+        },
     }, {
         collection: 'electronics',
         timestamps: true
@@ -131,7 +130,7 @@ const furnitureSchema = new Schema({
         material: String,
         product_shop: {
             type: Schema.Types.ObjectId,
-            ref: 'Shop',
+            ref: 'Shop'
         },
     }, {
         collection: 'furnitures',

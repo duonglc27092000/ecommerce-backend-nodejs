@@ -7,7 +7,7 @@ x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267
 
 {
     "name": "Shop JS",
-    "email": "luongduongit019@gmail.com",
+    "email": "luongduongit02@gmail.com",
     "password": "dgdg1999"
 }
 ### login
@@ -16,7 +16,7 @@ Content-Type: application/json
 x-api-key: ad061d31e1192c3b7ac85db361c64547f9b4ecba771802a0bd9005188981d8ac8d79c2917c87387b40fe514eb9a1495ed6470c176d03657dc55785b8392a586b
 
 {
-    "email": "luongduongit020@gmail.com",
+    "email": "luongduongit019@gmail.com",
     "password": "dgdg1999"
 }
 ### handlerRefreshToken
@@ -24,16 +24,17 @@ POST {{url_dev}}/shop/handlerRefreshToken
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
 x-client-id: 657776e4c79d36a8fa5461a9
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg1OTAsImV4cCI6MTcwMjkzMzM5MH0._20wWEw9snaVV0FARtKKRORyrO1c9BKGkTn_nylHSsc
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTdlZDhlYzVlODU1ZDU5YWQ5ZmI3ZjkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0Njk2ODUsImV4cCI6MTcwNTA3NDQ4NX0.CdWgC5RqM_Tsj3x1zd1HHzlK1ukupwwaE3JFMS-eOBE
+
 ### create new product Clothing
-POST {{url_dev}}/product 
+POST {{url_dev}}/product
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
 x-client-id: 657776e4c79d36a8fa5461a9
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDM2MTA2MjcsImV4cCI6MTcwNDIxNTQyN30.x_Go_82YWNPtC1ozsCaXX98j4jSxh7IOQIO7F4Af5QE
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTdlZDhlYzVlODU1ZDU5YWQ5ZmI3ZjkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxOUBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0Njk3MjYsImV4cCI6MTcwNTA3NDUyNn0.iioOYCrji98OT-slOqYt9_pAG0FV2dCnyMFd3eOfmcM
 
 {
-    "product_name":"New Jean 4",
+    "product_name":"New Jean 1",
     "product_description":"High-q",
     "product_price":50,
     "product_type":"Clothing",
@@ -50,7 +51,7 @@ POST {{url_dev}}/product
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
 x-client-id: 657776e4c79d36a8fa5461a9
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
 
 {
     "product_name":"Mess 02",
@@ -71,12 +72,12 @@ POST {{url_dev}}/product
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
 x-client-id: 657776e4c79d36a8fa5461a9
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
 
 {
-    "product_name":"Tu sach 20",
+    "product_name":"Tu sach 02",
     "product_description":"nothing",
-    "product_price":5000,
+    "product_price":590,
     "product_type":"Furniture",
     "product_thumb":"product_thumb",
     "product_quantity":233,
@@ -92,14 +93,14 @@ GET {{url_dev}}/product/drafts/all
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
 x-client-id: 657776e4c79d36a8fa5461a9
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
 
 #### action product 
-POST {{url_dev}}/product/publish/657ed2e62e3165567e241ce9
+POST {{url_dev}}/product/publish/659820eb1a6ea685f6c2916a
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
 x-client-id: 657776e4c79d36a8fa5461a9
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
 
 
 #### get all  publish
@@ -107,9 +108,13 @@ GET {{url_dev}}/product/publish/all
 Content-Type: application/json
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
 x-client-id: 657776e4c79d36a8fa5461a9
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDIzMjg2MDIsImV4cCI6MTcwMjkzMzQwMn0.uRlff1g-FTxnKj5C4RsjWtYEUloOaIQ3Ird2UnbPejE
- 
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc3NzZlNGM3OWQzNmE4ZmE1NDYxYTkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyMEBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0NTc4NjIsImV4cCI6MTcwNTA2MjY2Mn0.nUi9FYAXZSQOKTbuB2rbTpcpQwYNURdL2OEn28fhhCM
+
 ### get searchproduct
 
 GET {{url_dev}}/product/search/
 x-api-key: 31d5cd0ff3df0954f7d6fbeaf8972d2f7b0e102a792ef8f4e086484a64363ab78d267aefe59913ad40c2ae731d7ba6d460b4235fa50168f91473b9dcef2f8364
+###
+
+GET {{url_dev}}/product/
+
