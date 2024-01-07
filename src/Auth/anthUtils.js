@@ -61,7 +61,7 @@ const authenticationV2 = asyncHandler(async (req, res, next) => {
     if (!userId) throw new AuthFailureError('Invalid Request ! - userId authenticationV2 - 1')
     //2 
     const keyStore = await findByUserId(userId)
-    if (!keyStore) throw new NotFoundError('Not Found KeyStore')
+    if (!keyStore) throw new NotFoundError('Not Found KeyStore - authUtils.js -authenticationV2')
     //3
     if (req.headers[HEADER.REFRESHTOKEN]) {
         try {

@@ -23,6 +23,6 @@ router.post('/unpublish/:id', asyncHandler(ProductController.unPublishProductByS
 
 // QUERY
 router.get('/drafts/all', asyncHandler(ProductController.getAllDraftsShop))
-router.get('/publish/all', asyncHandler(ProductController.getAllPublishShop))
+router.get('/published/all', asyncHandler(ProductController.getAllPublishShop))
 
 module.exports = router

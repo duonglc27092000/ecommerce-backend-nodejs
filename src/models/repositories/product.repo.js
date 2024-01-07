@@ -1,9 +1,7 @@
 "use strict"
 
 
-// const {
-//     Types
-// } = require("mongoose")
+
 const {
     product,
     electronic,
@@ -67,16 +65,16 @@ const publishProductByShop = async ({
         product_shop: new Types.ObjectId(product_shop),
         _id: new Types.ObjectId(product_id)
     })
-    if (foundShop) console.log("foundShop :::=>", foundShop)
+    // if (foundShop) console.log("foundShop ::: =>", foundShop)
     if (!foundShop) return null
     foundShop.isDraft = false
     foundShop.isPublished = true
-    console.log('foundShop.isDraft ', foundShop.isDraft)
-    console.log('foundShop.isPublished ', foundShop.isPublished)
+    // console.log('foundShop.isDraft ', foundShop.isDraft)
+    // console.log('foundShop.isPublished ', foundShop.isPublished)
     const {
         modifedCount
     } = await foundShop.updateOne(foundShop)
-    console.log("update done !!")
+    console.log("update PublishProductByShop done !!")
     return modifedCount
 
 }
@@ -97,7 +95,7 @@ const unPublishProductByShop = async ({
     const {
         modifedCount
     } = await foundShop.updateOne(foundShop)
-    console.log("update done !!")
+    console.log("update unPublishProductByShop  done !!")
     return modifedCount
 }
 const findAllProducts = async ({
