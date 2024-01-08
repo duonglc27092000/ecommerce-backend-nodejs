@@ -16,9 +16,49 @@ const getSelectData = (select = []) => {
 const unGetSelectData = (select = []) => {
     return Object.fromEntries(select.map(el => [el, 0]))
 }
+const removeUndefinedObject = obj => {
+    Object.keys(obj).forEach(k => {
+        if (obj[k] == null) {
+            delete obj[k]
+        }
+    })
+    return obj
+}
+
+/*
+const a = {
+    c:{
+        d:1
+    }
+}
+
+db.conllection.updateOne({
+    `c.d`:1
+})
+
+*/
+const updateNestedObjectParser = obj => {
+    console.log(`[1]::`, obj)
+    const final = {}
+    Object.keys(obj).forEach(k => {
+        if (typeof obj[k] == 'Object' && !Array.isArray(obj[k])) {
+            const response = updateNestedObjectParser(obj[k])
+            Object.keys(response).forEach(a => {
+                final[`${k}.${a}`] = res[a]
+            })
+        } else {
+            final[k] = obj[k]
+        }
+    })
+    console.log(`[2]::`, obj)
+
+    return final
+}
 
 module.exports = {
     getInfoData,
     getSelectData,
-    unGetSelectData
+    unGetSelectData,
+    removeUndefinedObject,
+    updateNestedObjectParser
 }
