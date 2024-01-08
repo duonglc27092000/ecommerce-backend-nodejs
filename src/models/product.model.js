@@ -11,25 +11,25 @@ const COLLECTION_NAME = 'Products'
 const productSchema = new Schema({
     product_name: {
         type: String,
-        require: true
+        required: true
     },
     product_thumb: {
         type: String,
-        require: true
+        required: true
     },
     product_description: String,
     product_slug: String,
     product_price: {
         type: Number,
-        require: true
+        required: true
     },
     product_quantity: {
         type: Number,
-        require: true
+        required: true
     },
     product_type: {
         type: String,
-        require: true,
+        required: true,
         enum: ['Electronics', 'Clothing', 'Furniture']
     },
     product_shop: {
@@ -38,7 +38,7 @@ const productSchema = new Schema({
     },
     product_attributes: {
         type: Schema.Types.Mixed,
-        require: true
+        required: true
     },
     // more
     product_ratingsAverage: {
@@ -87,7 +87,7 @@ productSchema.pre('save', function (next) {
 const clothingSchema = new Schema({
         brand: {
             type: String,
-            require: true
+            required: true
         },
         size: String,
         material: String,
@@ -105,7 +105,7 @@ const clothingSchema = new Schema({
 const electronicsSchema = new Schema({
         manufacturer: {
             type: String,
-            require: true
+            required: true
         },
         model: String,
         color: String,
@@ -124,7 +124,7 @@ const electronicsSchema = new Schema({
 const furnitureSchema = new Schema({
         manufacturer: {
             type: String,
-            require: true
+            required: true
         },
         size: String,
         material: String,
