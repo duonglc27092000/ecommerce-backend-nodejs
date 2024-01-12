@@ -24,6 +24,10 @@ const discountSchema = new Schema({
         type: Number,
         required: true
     }, // 10.000,10
+    discount_max_value: {
+        type: Number,
+        required: true
+    },
     discount_code: {
         type: String,
         required: true
@@ -71,7 +75,7 @@ const discountSchema = new Schema({
         required: true,
         enum: ['all', 'specific']
     },
-    discont_product_ids: {
+    discount_product_ids: {
         type: Array,
         default: []
     } //so san pham da duoc ap dung
