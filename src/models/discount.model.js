@@ -43,7 +43,7 @@ const discountSchema = new Schema({
     discount_max_uses: {
         type: Number,
         required: true
-    }, // so luong discount duowc ap dung
+    }, // so luong discount duoc ap dung
     discount_uses_count: {
         type: Number,
         required: true
@@ -87,6 +87,4 @@ const discountSchema = new Schema({
 
 
 //Export the model
-module.exports = {
-    discount: model(DOUCUMENT_NAME, discountSchema)
-}
+module.exports = model(DOUCUMENT_NAME, discountSchema)

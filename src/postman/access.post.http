@@ -1,19 +1,19 @@
 @url_dev =http://localhost:3055/v1/api
 
 ### signup
-POST {{url_dev}}/shop/signup
+POST {{url_dev}}/auth/shop/signup
 Content-Type: application/json
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
 
 {
-    "name": "Shop JS",
-    "email": "luongduongit02@gmail.com",
+    "name": "Shop JS 03",
+    "email": "luongduongit07@gmail.com",
     "password": "dgdg1999"
 }
 ### login
-POST {{url_dev}}/shop/login
+POST {{url_dev}}/auth/shop/login
 Content-Type: application/json
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
 
 {
     "email": "luongduongit01@gmail.com",
@@ -22,19 +22,18 @@ x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6
 ### handlerRefreshToken
 POST {{url_dev}}/shop/handlerRefreshToken
 Content-Type: application/json
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
-x-client-id: 657776e4c79d36a8fa5461a9
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQyZDhlODQ4MTA2ZjEiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNDU1NzIxOSwiZXhwIjoxNzA1MTYyMDE5fQ.dTfmSC8W7AYvlZfN3ru8Q29KykqQXsqZpD3tdKGaX80
-
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a3244cd3e3ab4c07cbdd49
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3MjkzMiwiZXhwIjoxNzA2Mzc3NzMyfQ.hGoVSL-CfPaDeJdTrhRbHbGT_XpcWAH-tgoS8sNQc5c
 ### create new product Clothing
 POST {{url_dev}}/product
 Content-Type: application/json
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
-x-client-id: 659849e34f2d2d8e848106f1
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQyZDhlODQ4MTA2ZjEiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNDU1NzIxOSwiZXhwIjoxNzA1MTYyMDE5fQ.dTfmSC8W7AYvlZfN3ru8Q29KykqQXsqZpD3tdKGaX80
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a3244cd3e3ab4c07cbdd49
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTI1MzEwNiwiZXhwIjoxNzA1ODU3OTA2fQ.Rcnao97vng2c1DbDEX6imnXVdLNKSgeOfq6MY-Eypms
 
 {
-    "product_name":"New Jean 05 ",
+    "product_name":"New Jean 01 ",
     "product_description":"High-q",
     "product_price":50,
     "product_type":"Clothing",
@@ -49,12 +48,13 @@ x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQy
 ### create new product Electronics
 POST {{url_dev}}/product 
 Content-Type: application/json
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
-x-client-id: 659849e34f2d2d8e848106f1
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQyZDhlODQ4MTA2ZjEiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNDU1NzIxOSwiZXhwIjoxNzA1MTYyMDE5fQ.dTfmSC8W7AYvlZfN3ru8Q29KykqQXsqZpD3tdKGaX80
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a3244cd3e3ab4c07cbdd49
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTI1MzEwNiwiZXhwIjoxNzA1ODU3OTA2fQ.Rcnao97vng2c1DbDEX6imnXVdLNKSgeOfq6MY-Eypms
+
 
 {
-    "product_name":"Mess 01",
+    "product_name":"Mess 02",
     "product_description":"limited",
     "product_price":50,
     "product_type":"Electronics",
@@ -70,14 +70,14 @@ x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQy
 ### create new product Fu
 POST {{url_dev}}/product 
 Content-Type: application/json
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
-x-client-id: 659849e34f2d2d8e848106f1
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQyZDhlODQ4MTA2ZjEiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNDU1NzIxOSwiZXhwIjoxNzA1MTYyMDE5fQ.dTfmSC8W7AYvlZfN3ru8Q29KykqQXsqZpD3tdKGaX80
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a32478d3e3ab4c07cbdd58
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ3OGQzZTNhYjRjMDdjYmRkNTgiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAyQGdtYWlsLmNvbSIsImlhdCI6MTcwNTI1Mzk1NiwiZXhwIjoxNzA1ODU4NzU2fQ.4rZpWuwljEctQVW9xWJyYIGy3n_zceXgTeg9JZ0X6lI
 
 {
-    "product_name":"Tu sach 02",
+    "product_name":"Tu sach 01",
     "product_description":"nothing",
-    "product_price":590,
+    "product_price":5966,
     "product_type":"Furniture",
     "product_thumb":"product_thumb",
     "product_quantity":233,
@@ -91,32 +91,117 @@ x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQy
 ### get all  draft 
 GET {{url_dev}}/product/drafts/all 
 Content-Type: application/json
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
-x-client-id: 659849e34f2d2d8e848106f1
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQyZDhlODQ4MTA2ZjEiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNDU1NzIxOSwiZXhwIjoxNzA1MTYyMDE5fQ.dTfmSC8W7AYvlZfN3ru8Q29KykqQXsqZpD3tdKGaX80
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a3244cd3e3ab4c07cbdd49
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3Mzk5NiwiZXhwIjoxNzA2Mzc4Nzk2fQ.mThkay-aiLl6vEz7bHhL0YQXcktXgfxrzMNN_gVRkeM
+# authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3Mzk5NiwiZXhwIjoxNzA1OTQ2Nzk2fQ.cbvCjdg_0nDbpMceDMc995_KyaETzLhB3d9ZOd9I-4g
 
 ####  publish product
-POST {{url_dev}}/product/publish/659977045a9a89cd196efc94
+POST {{url_dev}}/product/publish/65a41ddc099daef66925e979
 Content-Type: application/json
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
-x-client-id: 659849e34f2d2d8e848106f1
-authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQyZDhlODQ4MTA2ZjEiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNDU1NzIxOSwiZXhwIjoxNzA0NzMwMDE5fQ.WxiYhQCtjA6YTPnhwFBjkm2YgfyVUjHY3jmwdxeWku4
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQyZDhlODQ4MTA2ZjEiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNDU1NzIxOSwiZXhwIjoxNzA1MTYyMDE5fQ.dTfmSC8W7AYvlZfN3ru8Q29KykqQXsqZpD3tdKGaX80
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a3244cd3e3ab4c07cbdd49
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3Mzk5NiwiZXhwIjoxNzA1OTQ2Nzk2fQ.cbvCjdg_0nDbpMceDMc995_KyaETzLhB3d9ZOd9I-4g
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3Mzk5NiwiZXhwIjoxNzA2Mzc4Nzk2fQ.mThkay-aiLl6vEz7bHhL0YQXcktXgfxrzMNN_gVRkeM
 
-#### get all  publish
+#### get all  publish all
 GET {{url_dev}}/product/published/all 
 Content-Type: application/json
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
-x-client-id: 659849e34f2d2d8e848106f1
-x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTk4NDllMzRmMmQyZDhlODQ4MTA2ZjEiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNDU1NzIxOSwiZXhwIjoxNzA1MTYyMDE5fQ.dTfmSC8W7AYvlZfN3ru8Q29KykqQXsqZpD3tdKGaX80
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a3244cd3e3ab4c07cbdd49
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3ODIxNiwiZXhwIjoxNzA2MzgzMDE2fQ.nwTJbue8npwNTjEHsp0gJoXyIw6r5XX5frlhEJHQwxM
+# authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3Mzk5NiwiZXhwIjoxNzA1OTQ2Nzk2fQ.cbvCjdg_0nDbpMceDMc995_KyaETzLhB3d9ZOd9I-4g
 
-### get searchproduct
+### get search product
 
-GET {{url_dev}}/product/search/tu
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
+GET {{url_dev}}/product/search/01
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
 
 
 ### get list all product 
 GET {{url_dev}}/product/
-x-api-key: e398254c659d3e4c301d5572dceadfc2a28ade874bc4ae7d0428cec220e8b50e669b6960aa15ac4ef64ea16bae9da24c96f8f88555cd3f7b38140d499d1d74bd
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
 
+
+### Get discount by shop 
+GET  {{url_dev}}/discount
+Content-Type: application/json
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a32478d3e3ab4c07cbdd58 
+# x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3ODIxNiwiZXhwIjoxNzA2MzgzMDE2fQ.nwTJbue8npwNTjEHsp0gJoXyIw6r5XX5frlhEJHQwxM
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3ODIxNiwiZXhwIjoxNzA1OTUxMDE2fQ.mAUvWlb2IcxSG2J7NUYSgchtFT1gaYjyGShh1PJtqp8
+
+### create discount by shop
+POST  {{url_dev}}/discount
+Content-Type: application/json
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a3244cd3e3ab4c07cbdd49
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3ODIxNiwiZXhwIjoxNzA2MzgzMDE2fQ.nwTJbue8npwNTjEHsp0gJoXyIw6r5XX5frlhEJHQwxM
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3ODIxNiwiZXhwIjoxNzA1OTUxMDE2fQ.mAUvWlb2IcxSG2J7NUYSgchtFT1gaYjyGShh1PJtqp8
+
+{
+    "name":"name fixed amount ",
+    "description":"description",
+    "type":"percentage",
+    "value":3000,
+    "max_value":30000,
+    "code":"SHOP-1122",
+    "start_date":"2024-01-20 08:00:00",
+    "end_date":"2024-01-25 08:00:00",
+    "max_uses":100,
+    "uses_count":0,
+    "users_used":[],
+    "max_uses_per_user":1,
+    "min_order_value":200000,
+    "created_by":{},
+    "is_active":true,
+    "applies_to":"specific",
+    "product_ids":["65a4190d50f57cd0f9e5bd15","65a4193850f57cd0f9e5bd1d"]
+}
+### create discount by shop
+POST  {{url_dev}}/discount
+Content-Type: application/json
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+x-client-id: 65a3244cd3e3ab4c07cbdd49
+x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3ODIxNiwiZXhwIjoxNzA2MzgzMDE2fQ.nwTJbue8npwNTjEHsp0gJoXyIw6r5XX5frlhEJHQwxM
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNhYjRjMDdjYmRkNDkiLCJlbWFpbCI6Imx1b25nZHVvbmdpdDAxQGdtYWlsLmNvbSIsImlhdCI6MTcwNTc3ODIxNiwiZXhwIjoxNzA1OTUxMDE2fQ.mAUvWlb2IcxSG2J7NUYSgchtFT1gaYjyGShh1PJtqp8
+
+{
+    "name":"name fixed amount all product ",
+    "description":"description",
+    "type":"percentage",
+    "value":9000,
+    "max_value":40000,
+    "code":"SHOP-1144",
+    "start_date":"2024-01-20 08:00:00",
+    "end_date":"2024-01-25 08:00:00",
+    "max_uses":100,
+    "uses_count":0,
+    "users_used":[],
+    "max_uses_per_user":1,
+    "min_order_value":300000,
+    "created_by":{},
+    "is_active":true,
+    "applies_to":"all",
+    "product_ids":[]
+}
+
+### get product for code
+GET   {{url_dev}}/discount/list_product_code?code=SHOP-1122&shopId=65a3244cd3e3ab4c07cbdd49&limit=50&page=1
+Content-Type: application/json
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+###
+POST  http://localhost:3055/v1/api/discount/amount
+Content-Type: application/json
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+
+{
+    "codeId":"SHOP-1122",
+    "userId":"2",
+    "shopId":"65a3244cd3e3ab4c07cbdd49",
+    "products":[{
+        "productId": "65a4190d50f57cd0f9e5bd15",
+        "quantity":5,
+        "price":100000
+    }]
+}

@@ -4,6 +4,7 @@ const apikeyModel = require('../models/apiKey.model')
 // const crypto = require('crypto')
 const findById = async (key) => {
 
+    // create apikey 
     // const newKey = await apikeyModel.create({
     //     key: crypto.randomBytes(64).toString('hex'),
     //     permissions: ['0000']

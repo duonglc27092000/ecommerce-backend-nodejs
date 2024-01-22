@@ -11,7 +11,7 @@ const {
 } = require('../services/keyToken.service')
 
 const HEADER = {
-    AIP_KEY: 'x-api-key',
+    API_KEY: 'x-api-key',
     CLIENT_ID: 'x-client-id',
     AUTHORIZATION: 'authorization',
     REFRESHTOKEN: 'x-token-id'
@@ -67,7 +67,7 @@ const authenticationV2 = asyncHandler(async (req, res, next) => {
         try {
             const refreshToken = req.headers[HEADER.REFRESHTOKEN]
             const decodeUser = JWT.verify(refreshToken, keyStore.privateKey)
-            if (userId !== decodeUser.userId) throw new AuthFailureError('Invalid UserId ! - 1 ')
+            if (userId !== decodeUser.userId) throw new AuthFailureError('Invalid UserId ! - refreshToken ')
             req.keyStore = keyStore
             req.user = decodeUser
             req.refreshToken = refreshToken

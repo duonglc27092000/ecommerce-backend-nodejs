@@ -10,12 +10,12 @@ const {
 class AccessController {
 
     handlerRefreshToken = async (req, res, next) => {
-        new SuccessResponse({
-            message: 'Get Token Success',
-            metadata: await AccessService.handlerRefreshToken(
-                req.body.refreshToken
-            )
-        }).send(res)
+        // new SuccessResponse({
+        //     message: 'Get Token Success',
+        //     metadata: await AccessService.handlerRefreshToken(
+        //         req.body.refreshToken
+        //     )
+        // }).send(res)
 
         //v2 fixed , no need accessToken
         new SuccessResponse({

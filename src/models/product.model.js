@@ -124,7 +124,7 @@ const electronicsSchema = new Schema({
 const furnitureSchema = new Schema({
         manufacturer: {
             type: String,
-            required: true
+            // required: true
         },
         size: String,
         material: String,

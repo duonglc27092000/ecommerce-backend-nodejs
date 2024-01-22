@@ -3,10 +3,7 @@
 
 
 const {
-    product,
-    electronic,
-    clothing,
-    furniture
+    product
 } = require("../product.model")
 const {
     Types
@@ -64,13 +61,13 @@ const publishProductByShop = async ({
     const foundShop = product.findOne({
         product_shop: new Types.ObjectId(product_shop),
         _id: new Types.ObjectId(product_id)
-    })
+    }).lean()
     // if (foundShop) console.log("foundShop ::: =>", foundShop)
     if (!foundShop) return null
     foundShop.isDraft = false
     foundShop.isPublished = true
-    // console.log('foundShop.isDraft ', foundShop.isDraft)
-    // console.log('foundShop.isPublished ', foundShop.isPublished)
+    console.log('foundShop.isDraft :::', foundShop.isDraft)
+    console.log('foundShop.isPublished :::', foundShop.isPublished)
     const {
         modifedCount
     } = await foundShop.updateOne(foundShop)
