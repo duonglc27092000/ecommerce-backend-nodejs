@@ -114,11 +114,11 @@ x-token-id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEzMjQ0Y2QzZTNh
 
 ### get search product
 
-GET {{url_dev}}/product/search/01
+GET {{url_dev}}/product/search/Mess
 x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
 
 
-### get list all product 
+### get list all product by user
 GET {{url_dev}}/product/
 x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
 
@@ -205,3 +205,24 @@ x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac
         "price":100000
     }]
 }
+
+#### addToCart [User] 
+POST  {{url_dev}}/cart
+Content-Type: application/json
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f
+
+{
+    "userId":1001,
+    "product":{
+        "productId":"65a4190d50f57cd0f9e5bd15",
+        "shopId":"65a3244cd3e3ab4c07cbdd49",
+        "quantity":3,
+        "name":"New Jean 05",
+        "price":50000
+    }
+}
+
+### get list to cart
+GET  {{url_dev}}/cart
+Content-Type: application/json
+x-api-key: aad9202c2ae92bbcaf070831ab009596cfb2fad225d7c18fc720b6cc02acc070216ac7447d0737247c61e8b6e312c502e1f0625b8f55f34c2689708902cdb76f

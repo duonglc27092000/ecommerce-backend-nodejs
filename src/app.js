@@ -12,17 +12,25 @@ app.use(morgan('dev'));
 // app.use(morgan('combined'));
 app.use(helmet())
 app.use(compression());
-app.use(express.json())
+app.use(express.json());
 app.use(express.urlencoded({
     extended: true
 }))
+/////////
+// const bodyparser = require('body-parser');
 
+// /*assuming an express app is declared here*/
+// app.use(bodyparser.json());
+// app.use(bodyparser.urlencoded({extended: true}));
+//////////////////////
 // init db 
 require('./dbs/init.mongodb')
+
 // const {
 //     checkOverLoad
 // } = require('./helpers/check.connect')
 // checkOverLoad()
+
 // init routes
 app.use('/', require('./routes'))
 
